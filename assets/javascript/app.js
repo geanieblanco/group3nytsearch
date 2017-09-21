@@ -1,15 +1,13 @@
-var apiKey: "bb138c818e634e74a55413b6d15ac2fd";
+//
+var apiKey = "bb138c818e634e74a55413b6d15ac2fd";
 
-var queryURL: ;
+var keyword = $("#search").val();
 
-var keyword:
+var queryURL = "http://api.nytimes.com/svc/search/v1/article?format=json&?q="+ keyword +"&api-key="+ apiKey +"";
 
-var year: 
-
-var 
-$.ajax ({
-	url: queryURL,
-	method: 'GET'
-}).done(function(result){
-	console.log(result);
-})
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).done(function(response) {
+          console.log(response);
+       });

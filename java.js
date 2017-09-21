@@ -1,10 +1,10 @@
-var apiKey: "bb138c818e634e74a55413b6d15ac2fd";
+var apiKey = "bb138c818e634e74a55413b6d15ac2fd";
 
-var queryURL: ;
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
-var keyword:
+var keyword =
 
-var year: 
+var year = 
 
 var 
 $.ajax ({
@@ -13,3 +13,5 @@ $.ajax ({
 }).done(function(result){
 	console.log(result);
 })
+
+$("#search-button").on("click", function())
